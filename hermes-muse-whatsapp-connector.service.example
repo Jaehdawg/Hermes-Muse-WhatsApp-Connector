@@ -1,0 +1,16 @@
+[Unit]
+Description=Hermes Muse WhatsApp Connector
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Replace this with the path where you installed the binary.
+ExecStart=/usr/local/bin/hermes-muse-whatsapp-connector
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=default.target

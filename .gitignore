@@ -1,0 +1,13 @@
+# WhatsApp companion credentials and state
+*.db
+*.db-shm
+*.db-wal
+store/
+session/
+
+# Build artifacts
+hermes-muse-whatsapp-connector
+*.exe
+
+# Local configuration
+.env
